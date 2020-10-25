@@ -7,10 +7,24 @@
     <Filter Include="include">
       <UniqueIdentifier>{1ed1f291-a130-427f-94fc-8e66858c4325}</UniqueIdentifier>
     </Filter>
+    <Filter Include="doc">
+      <UniqueIdentifier>{c9b12f60-e868-476c-8065-d7af437c9fe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{7dd76883-8b64-490c-b8c8-fffb6726b114}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
+    <ClCompile Include="src\learnopencv_chapter2.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="test\main.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\learnopencv.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
