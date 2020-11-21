@@ -31,8 +31,8 @@ int writeavi(int argc, char *argv[]) {
             bgr_frame,
             logpolar_frame,
             cv::Point2f(
-                bgr_frame.cols / 2,
-                bgr_frame.rows / 2
+                (float)bgr_frame.cols / 2,
+                (float)bgr_frame.rows / 2
             ),
             40,
             cv::WARP_FILL_OUTLIERS
