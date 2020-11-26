@@ -2,8 +2,7 @@
 #define UTILS_UNIX_MUTEX_H_
 
 #include <pthread.h>
-
-#include "utilbase.h"
+#include "mutexbase.h"
 
 namespace utils {
 

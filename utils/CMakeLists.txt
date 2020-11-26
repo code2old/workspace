@@ -4,5 +4,4 @@ project(utils)
 
 set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR}/public)
 
-#add_subdirectory(src)
-add_subdirectory(test)
+add_subdirectory(src)

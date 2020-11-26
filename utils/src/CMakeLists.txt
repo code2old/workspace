@@ -1,6 +1,7 @@
 aux_source_directory(. SRC_LIST)
 
 include_directories(${PROJECT_SOURCE_DIR}/include) 
+include_directories(${PROJECT_SOURCE_DIR}/include/base) 
 
 MESSAGE(STATUS "operation system is ${CMAKE_SYSTEM}")
  
@@ -16,8 +17,6 @@ ELSEIF (CMAKE_SYSTEM_NAME MATCHES "FreeBSD")
 ELSE ()
     MESSAGE(STATUS "other platform: ${CMAKE_SYSTEM_NAME}")
 ENDIF (CMAKE_SYSTEM_NAME MATCHES "Linux")
- 
-MESSAGE(STSTUS "###################################")
 
 add_library(utils_static STATIC ${SRC_LIST})
 add_library(utils_shared SHARED ${SRC_LIST})

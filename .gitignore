@@ -37,3 +37,8 @@ Debug
 bin
 book
 *.vs
+
+# utils
+build
+public
+bin
