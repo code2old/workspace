@@ -1,4 +1,5 @@
-#include "stringutil.h"
+#include "stringutils.h"
+
 
 #include <string>
 #include <vector>
@@ -9,7 +10,7 @@ using std::vector;
 
 namespace utils {
 
-extern std::vector<std::string> split(const string& s, const char *delim) {
+std::vector<std::string> stringutils::split(const string& s, const char *delim) {
     vector<string> ret;
     int last = 0;
     int index = s.find(delim, last);

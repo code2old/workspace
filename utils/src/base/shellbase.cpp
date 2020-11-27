@@ -31,12 +31,13 @@ int ShellServerBase::regShellCmd(const char *cmdName, int(*callbackFunc)(void *,
         LOG(ERROR, "the cmd(%s) not valid", cmdName);
         return EXIT_FAILED;
     }
-    SHELL_CMD_UNIT cmdUnit = { 0 };
-    cmdUnit.cmdName = std::string(cmdName);
+
+    SHELL_CMD_UNIT cmdUnit;
+    cmdUnit.cmdName      = std::string(cmdName);
     cmdUnit.callbackFunc = callbackFunc;
     cmdUnit.callbackParm = callbackParm;
     _mutex.lock();
-    m_shell[std::string(cmdUnit.cmdName)] = cmdUnit; /*std::move(cmdUnit);*/
+    m_shell[cmdUnit.cmdName] = cmdUnit; /*std::move(cmdUnit);*/
     _mutex.unlock();
     return EXIT_SUCCESS;
 }

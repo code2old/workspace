@@ -3,6 +3,7 @@
 
 namespace utils {
 
+class CMutex;
 class CCondBase;
 class CCond {
 public:
@@ -11,6 +12,8 @@ public:
     int wait(int milliseconds = 0);
     int signal();
     int broadcast();
+    int lock();
+    int unlock();
 private:
     utils::CCondBase *m_cond;
 };

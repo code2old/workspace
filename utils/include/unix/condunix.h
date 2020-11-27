@@ -14,6 +14,8 @@ public:
     int wait(int milliseconds = 0);
     int signal();
     int broadcast();
+    int acquire();
+    int release();
 private:
     pthread_cond_t _cond;
 };

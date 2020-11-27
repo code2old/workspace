@@ -38,4 +38,12 @@ int CCondUnix::broadcast() {
     return pthread_cond_broadcast(&_cond);
 }
 
+int CCondUnix::acquire() {
+    return lock();
+}
+
+int CCondUnix::release() {
+    return unlock();
+}
+
 }

@@ -10,7 +10,7 @@
 
 namespace utils {
 
-#define SEND_BUF_LEN (512*1024))
+#define SEND_BUF_LEN (512*1024)
 
 typedef struct TaskItem {
     int fd;

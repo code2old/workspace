@@ -1,7 +1,7 @@
 #ifndef UTILS_SINGLETON_H_
 #define UTILS_SINGLETON_H_
 
-#include <iostream>
+#include <stdio.h>
 #include "guard.h"
 
 namespace utils {
@@ -61,6 +61,5 @@ template <typename T>
 bool Singleton<T>::bfree = false;
 
 }
-
 
 #endif 

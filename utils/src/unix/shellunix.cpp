@@ -5,7 +5,7 @@
 
 #include "log.h"
 #include "common.h"
-#include "fileutil.h"
+#include "fileutils.h"
 #include "shellunix.h"
 
 namespace utils {
@@ -85,7 +85,7 @@ static int serv_accept(int listenfd, uid_t *uidptr) {
 }
 
 void ShellServerUnix::cmdLoop() {
-    if (!_handler.init()) {
+    if (!_handler.init() < 0) {
         LOG(ERROR, "_handle start failed");
         return;
     }
@@ -134,7 +134,7 @@ int ShellServerUnix::regCmd(const char *cmdName, int(*callbackFunc)(void *, cons
         return EXIT_FAILED;
     }
     char shellName[128] = { 0 };
-    if (isFileExist(SHELL_TOOLS_PATH)) {
+    if (fileutils::exists(SHELL_TOOLS_PATH)) {
         std::string shellName(SHELL_CMD_PATH);
         shellName += std::string(cmdName);
         symlink(SHELL_TOOLS_PATH, shellName.data());

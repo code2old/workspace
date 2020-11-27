@@ -17,6 +17,11 @@ typedef struct ShellCmdUnit {
     std::string cmdName;
     int (*callbackFunc)(void *, const char *recvBuf, char *sendBuf);
     void *callbackParm;
+    ShellCmdUnit() {
+        cmdName = "";
+        callbackFunc = NULL;
+        callbackParm = NULL;
+    }
 } SHELL_CMD_UNIT;
 
 class ShellServerBase : public utils::Runnable{

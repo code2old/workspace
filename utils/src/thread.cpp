@@ -33,7 +33,7 @@ CThread::~CThread() {
 void CThread::start(Runnable *r, void *arg) {
     _runnable = r;
     _args = arg;
-    return m_thread->start((void *)CThread::hook, arg);
+    return m_thread->start((void *)CThread::hook, this);
 }
 
 /*等待线程退出*/

@@ -1,7 +1,7 @@
-#include <stdio.h>
-
 #include "guard.h"
 #include "mutex.h"
+
+#include <iostream>
 
 namespace utils {
 

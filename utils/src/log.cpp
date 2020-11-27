@@ -14,9 +14,9 @@ const char *CLogger::_levelStr[] = {
 
 const char *CLogger::_levelClr[] = {
     "\033[0;31m",
-    "\033[0;32;32m",
-    "\033[1;34m",
     "\033[0;35m",
+    "\033[1;34m",
+    "\033[0;32m",
     "\033[1;33m",
     "\033[1;37m"
 };
@@ -70,11 +70,11 @@ void CLogger::setFileName(const char* filename, bool flag) {
     _flag = flag;
     _filename = strdup(filename);
     if (!_flag) {
-        /*�ض����´򿪵��ļ�*/
+        /*重定向到新打开的文件*/
         dup2(fd, _fd);
-        /*�ض��򵽱�׼���*/
+        /*重定向到标准输出*/
         dup2(fd, 1);
-        /*�ض��򵽱�׼����*/
+        /*重定向到标准错误*/
         if (_fd != 2) {
             dup2(fd, 2);
         }
@@ -142,7 +142,7 @@ void CLogger::logMessage(int level, const char *filename, int line, const char *
             data,
             NO_COLOR_LOG);
     }
-    /*ȥ������Ļ���*/
+    /*去掉多余的换行*/
     while (buffer[size - 2] == '\n') {
         --size;
     }
@@ -210,11 +210,11 @@ void CLogger::rotateLog(const char *filename, const char *fmt) {
         return;
     }
     if (!_flag) {
-        /*�ض����´򿪵��ļ�*/
+        /*重定向到新打开的文件*/
         dup2(fd, _fd);
-        /*�ض��򵽱�׼���*/
+        /*重定向到标准输出*/
         dup2(fd, 1);
-        /*�ض��򵽱�׼����*/
+        /*重定向到标准错误*/
         if (_fd != 2) {
             dup2(fd, 2);
         }
@@ -242,11 +242,11 @@ void CLogger::checkFile() {
             return;
         }
         if (!_flag) {
-            /*�ض����´򿪵��ļ�*/
+            /*重定向到新打开的文件*/
             dup2(fd, _fd);
-            /*�ض��򵽱�׼���*/
+            /*重定向到标准输出*/
             dup2(fd, 1);
-            /*�ض��򵽱�׼����*/
+            /*重定向到标准错误*/
             if (_fd != 2) {
                 dup2(fd, 2);
             }

@@ -39,4 +39,12 @@ int CCond::broadcast() {
     return m_cond->broadcast();
 }
 
+int CCond::lock() {
+    return m_cond->acquire();
+}
+
+int CCond::unlock() {
+    return m_cond->release();
+}
+
 }
