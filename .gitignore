@@ -43,3 +43,5 @@ build
 public
 bin
 code
+
+*.xlsx
