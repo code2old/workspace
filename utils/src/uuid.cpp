@@ -32,7 +32,7 @@ static uint64_t get_time() {
     struct timeval tv;
     gettimeofday(&tv, NULL);
     uint64_t time = tv.tv_usec;
-    time / 1000;
+    time /= 1000;
     time += (tv.tv_sec * 1000);
     return time;
 #else

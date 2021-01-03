@@ -21,6 +21,12 @@
     <ClCompile Include="test\main.cpp">
       <Filter>test</Filter>
     </ClCompile>
+    <ClCompile Include="src\learnopencv_chapter5.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\learnopencv_chapter10.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\learnopencv.h">

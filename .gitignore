@@ -36,7 +36,9 @@
 Debug
 bin
 book
+x64
 *.vs
+.vs
 
 # utils
 build
