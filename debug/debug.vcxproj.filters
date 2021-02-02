@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="test">
+      <UniqueIdentifier>{945c9d27-7816-4869-9cac-dfdead5d857d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{0bd45e09-1925-4936-90b4-b8778bfbe6c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stl">
+      <UniqueIdentifier>{6bb1cece-1a23-4da6-be78-ef4a62ef23a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test\main.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\test_alias_template.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\test_auto.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\test_bind.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\test_default.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\test_initializer_list.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\test_istream_iterator.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\test_iterator_category.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\test_lambdas.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\test_nullptr.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\test_ostream_iterator.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\test_rvalue_references.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\test_variadic_template.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="stl\testh_hash.cpp">
+      <Filter>stl</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\test_memory.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\test_operator.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\test_perclass.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\test_perclass2.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\test_allocator.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="test\allocator_test.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\test_embedded_pointer.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\test_new_handler.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\test_malloc.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\test_cookie.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="memory\test_vc6_memory.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test\stl_test.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\memory_test.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\allocator_test.h">
+      <Filter>test</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
